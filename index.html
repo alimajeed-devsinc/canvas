@@ -5,32 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Canvas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 
 <body>
-    <h2>Canvas Assignment</h2>
+    <div class="container m-3">
+    <h2>Canvas Assignment</h2>    
+    <div class="row "> 
+    
+    <div class="column">
     <img id="img" src="user.png" style="display: none;">
    <div class="col-12" style="height: 50%;">
        <div><input type="text" name="header" id="header" placeholder="header">
-            <input type="button" id="header-button" value="Add header" onclick="addheader();"></div>
-       <canvas id="canvas" style="border: 1px solid black; width: 600;height: 50vh;">
-        Canvas area
-       </canvas>
+            <input type="button" class="m-3 btn  btn-dark" id="header-button" value="Add header" onclick="addheader();"></div>
+       
        <div> <input type="text" name="footer" id="footer" placeholder="footer" >
-        <input type="button" id="footer-button" value="Add Footer" onclick="addfooter();"></div>
+        <input type="button" class="m-3 btn  btn-dark" id="footer-button" value="Add Footer" onclick="addfooter();"></div>
 
         <div> <input type="text" name="caption" id="caption" placeholder="caption" >
-            <input type="button" id="caption-button" value="Add Caption" onclick="addcaption();"></div>
+            <input type="button" class="m-3 btn  btn-dark" id="caption-button" value="Add Caption" onclick="addcaption();"></div>
     
 
     </div>
-       <div > <input type="file" name="File" id="file" ></div>
-   </div>
-   <div>
-        <input type="button" value="Reset text on Image" onclick="reset();">
-   </div>
-   <div><input type="button" name="download" id="downloadbutton" onclick="download();" value="Download"></div>
+       <div > <input style="margin: 1rem;" type="file" name="File" id="file" ></div>
    
+   <div>
+        <input type="button" class="m-3 btn  btn-dark" value="Reset text on Image" onclick="reset();">
+   </div>
+   <div><input type="button" class="m-3 btn  btn-dark" name="download" id="downloadbutton" onclick="download();" value="Download"></div>
+</div>
+<div class="column">
+    <canvas id="canvas" style="border: 1px solid black; width: 600;height: 50vh;">
+        Canvas area
+       </canvas>
+</div>
+</div>
+</div>
 </body>
 <script src="script.js"></script>
 
